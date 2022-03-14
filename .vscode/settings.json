@@ -1,0 +1,23 @@
+{
+  "sourcekit-lsp.serverArguments": [
+    "-Xswiftc",
+    "-sdk",
+    "-Xswiftc",
+    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk", // `xcrun --sdk iphonesimulator --show-sdk-path`
+    "-Xswiftc",
+    "-target",
+    "-Xswiftc",
+    "arm64-apple-ios15.4-simulator"
+  ],
+  "swift.buildArguments": [
+    "-Xswiftc",
+    "-sdk",
+    "-Xswiftc",
+    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.4.sdk", // `xcrun --sdk iphonesimulator --show-sdk-path`
+    "-Xswiftc",
+    "-target",
+    "-Xswiftc",
+    "arm64-apple-ios15.4-simulator"
+  ],
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+}

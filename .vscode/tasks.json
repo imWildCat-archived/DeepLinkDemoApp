@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Twilar",
+      "type": "process",
+      "command": "xcodebuild",
+      "args": [
+        "build",
+        "-project",
+        "${workspaceFolder}/DeepLinkDemoApp.xcodeproj",
+        "-scheme",
+        "DeepLinkDemoApp",
+        "-configuration",
+        "Debug",
+        "-sdk",
+        "${command:ios-debug.targetSdk}",
+        "-derivedDataPath",
+        "${workspaceFolder}/tmp/build",
+        "-allowProvisioningUpdates",
+        "CONFIGURATION_BUILD_DIR=${workspaceFolder}/tmp/build/Debug-${command:ios-debug.targetSdk}",
+      ],
+      "group":{
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+  ]
+}
