@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch Twilar App",
+      "name": "Launch Demo App",
       "type": "lldb",
       "request": "launch",
       "program": "${workspaceFolder}/tmp/build/Debug-${command:ios-debug.targetSdk}/DeepLinkDemoApp.app",
